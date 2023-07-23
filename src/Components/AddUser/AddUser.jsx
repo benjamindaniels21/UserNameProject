@@ -1,8 +1,19 @@
 import React from 'react'
 
-const AddUser = () => {
+const AddUser = (props) => {
+  
+  const addUserHandler = (event) => {
+    event.preventDefault();
+  }
+  
   return (
-    <div>AddUser</div>
+    <form onSubmit={addUserHandler}>
+      <label htmlFor="">Username</label>
+      <input type="text" id='username'/>
+      <label htmlFor="age">Age</label>
+      <input type="number" id='age'/>
+      <button type='submit'>Add User</button>
+    </form>
   )
 }
 
