@@ -9,7 +9,7 @@ const AddUser = (props) => {
   }
   
   return (
-    <Card>
+    <Card className={styles.input}>
       <form onSubmit={addUserHandler}>
         <label htmlFor="">Username</label>
         <input type="text" id='username'/>
