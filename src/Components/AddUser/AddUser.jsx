@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from '../Card/Card';
+import styles from "./AddUser.module.css"
 
 const AddUser = (props) => {
   
