@@ -4,6 +4,7 @@ import UsersList from "./Components/UsersList/UsersList";
 
 function App() {
   const [usersList, setUsersList] = useState([]);
+  const [showList, setShowList] = useState(false);
 
   const addUserHandler = (userName, userAge) => {
     setUsersList((prevUsersList) => {
@@ -12,13 +13,14 @@ function App() {
         { name: userName, age: userAge, id: Math.random().toString() },
       ];
     });
+    setShowList(true);
   };
 
   console.log(usersList.length);
   return (
     <div>
       <AddUser onAddUser={addUserHandler} />
-      <UsersList users={usersList} />
+      {showList && <UsersList users={usersList} />}
     </div>
   );
 }
