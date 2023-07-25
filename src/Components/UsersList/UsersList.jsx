@@ -1,11 +1,11 @@
 import React from 'react'
 import Card from '../Card/Card'
-import styles from '../Card/Card.module.css'
+import styles from './UsersList.module.css'
 
 
 const UsersList = (props) => {
   return (
-    <Card className={styles.card}>
+    <Card className={styles.user}>
     <ul className={styles.list}>
       {props.users.map((user) =>  {
       return(
