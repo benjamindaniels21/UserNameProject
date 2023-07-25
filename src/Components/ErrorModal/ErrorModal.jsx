@@ -1,8 +1,21 @@
 import React from 'react'
+import Card from '../Card/Card'
+import Button from '../Button/Button'
+import styles from './ErrorModal.module.css'
 
-const ErrorModal = () => {
+const ErrorModal = (props) => {
   return (
-    <div>ErrorModal</div>
+    <Card>
+      <header>
+        <h2>{props.title}</h2>
+      </header>
+      <div>
+        <p>{props.message}</p>
+      </div>
+      <footer>
+        <Button>Close</Button>
+      </footer>
+    </Card>
   )
 }
 
