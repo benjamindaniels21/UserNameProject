@@ -25,14 +25,14 @@ const AddUser = (props) => {
     if(+enteredUserAge < 1) {
       return;
     }
-    
+
     console.log(enteredUserName, enteredUserAge);
     setEnteredUserName('');
     setEnteredUserAge('');
   }
   
   return (
-    <Card className={styles.input}>
+    <Card className={styles.input} >
       <form onSubmit={addUserHandler}>
         <label htmlFor="">Username</label>
         <input type="text" id='username' value={enteredUserName} onChange={userNameChangeHandler}/>
