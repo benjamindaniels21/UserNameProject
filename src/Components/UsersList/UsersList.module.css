@@ -8,3 +8,10 @@
   max-width: 40rem;
 }
 
+.listItem {
+  margin-left: -30px;
+  padding: 5px;
+  list-style-type: none;
+  border: 1px solid;
+  margin-bottom: 10px;
+}
